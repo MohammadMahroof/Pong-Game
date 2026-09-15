@@ -7,7 +7,7 @@ class Ball(Turtle):
         self.shape("circle")
         self.color("white")
         self.penup()
-        self.shapesize(stretch_wid=1, stretch_len=1)
+        
 
     def move(self):
         new_x = self.xcor() + 10
