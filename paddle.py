@@ -1,5 +1,6 @@
 from turtle import Turtle
-
+UP_LIMIT = 225
+DOWN_LIMIT = -225
 
 class Paddle(Turtle):
 
@@ -12,10 +13,12 @@ class Paddle(Turtle):
         self.goto(position)
 
     def go_up(self):
+        if self.ycor() < UP_LIMIT:   
             new_y = self.ycor() + 20
             self.goto(self.xcor(), new_y)
 
     def go_down(self):
+        if self.ycor() > DOWN_LIMIT:
             new_y = self.ycor() - 20
             self.goto(self.xcor(), new_y)
 
