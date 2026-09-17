@@ -14,6 +14,7 @@ r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 ball = Ball()
 scoreboard = Scoreboard()
+WINNING_SCORE = 5
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
@@ -44,14 +45,21 @@ while is_game_on:
     if ball.xcor() > 380:
         ball.reset_position()
         scoreboard.l_point()
-        
-        
 
+        if scoreboard.l_score >= WINNING_SCORE:
+            scoreboard.game_over()
+            is_game_on = False
+        
+        
     #Detect L paddle misses
     if ball.xcor() < -380:
         ball.reset_position()
         scoreboard.r_point()
-        
+
+        if scoreboard.r_score >= WINNING_SCORE:
+            scoreboard.game_over()
+            is_game_on = False
+    
 
 
 
