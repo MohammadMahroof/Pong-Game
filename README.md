@@ -791,7 +791,7 @@ Game Loop
 
 # 👨‍💻 Author
 
-**Mahroof Shaikh**
+**Mohammad Mahroof**
 
 Built as part of my journey to improve my **Python, Object-Oriented Programming, and problem-solving skills**.
 
