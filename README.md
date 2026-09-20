@@ -91,7 +91,7 @@ No external packages are required.
 ## 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/MohammadMahroof/Pong-Game.git
 ```
 
 ## 2. Open the project folder
